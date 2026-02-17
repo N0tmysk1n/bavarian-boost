@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shop</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<nav>
+<div class="logo">BAVARIAN BOOST</div>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="builds.html">Builds</a></li>
+<li><a href="cart.html">Cart</a></li>
+</ul>
+</nav>
+
+<section>
+<h2 class="section-title">Performance Parts</h2>
+
+<div class="filters">
+<button onclick="filterProducts('all')">All</button>
+<button onclick="filterProducts('engine')">Engine</button>
+<button onclick="filterProducts('suspension')">Suspension</button>
+<button onclick="filterProducts('ecu')">ECU</button>
+</div>
+
+<div class="products">
+
+<div class="product-card" data-category="engine">
+<h3>M30 Turbo Manifold</h3>
+<div class="price">$799</div>
+<button class="btn" onclick="addToCart('M30 Turbo Manifold', 799)">Add</button>
+</div>
+
+<div class="product-card" data-category="ecu">
+<h3>Megasquirt 2 ECU</h3>
+<div class="price">$399</div>
+<button class="btn" onclick="addToCart('Megasquirt 2 ECU', 399)">Add</button>
+</div>
+
+<div class="product-card" data-category="suspension">
+<h3>Adjustable Coilovers</h3>
+<div class="price">$999</div>
+<button class="btn" onclick="addToCart('Adjustable Coilovers', 999)">Add</button>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>Boost Responsibly</p>
+</footer>
+
+</body>
+</html>
